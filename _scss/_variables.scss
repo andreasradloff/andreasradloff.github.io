@@ -4,7 +4,11 @@
 //
 
 // Colors
-$blue: #4183C4; 
+$blue: #4183C4;
+
+$primary: $blue;
+$primary-light: lighten($primary, 20%);
+
 
 // Grays
 $black: #000;
@@ -15,13 +19,32 @@ $lightGray: #eee;
 $white: #fff;
 
 // Font stacks
-$helvetica: Helvetica, Arial, sans-serif;
-$helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
-$georgia: Georgia, serif;
+$font-alt: "PT Sans",Verdana,Tahoma,"DejaVu Sans",sans-serif;
+$font-text: "PT Serif",Georgia,"Times New Roman","DejaVu Serif",serif;
+
+$font-size-base: 16px;
 
 // Mobile breakpoints
-@mixin mobile {
-  @media screen and (max-width: 640px) {
+@mixin xsmall {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media screen and (max-width: 749px) {
+    @content;
+  }
+}
+
+@mixin normal {
+  @media screen and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin wide {
+  @media screen and (max-width: 1820px) {
     @content;
   }
 }

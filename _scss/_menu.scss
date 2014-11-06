@@ -1,0 +1,30 @@
+nav {
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $font-alt;
+  font-size: 18px;
+
+  ul {
+    list-style: none;
+  }
+
+  @include small {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include small {
+      margin: 0 10px;
+      color: $blue;
+    }
+  }
+}
