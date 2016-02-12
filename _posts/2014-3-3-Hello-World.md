@@ -1,9 +1,11 @@
 ---
 layout: post
-title: You're up and running!
+title: "You're up and running!"
+published: true
 ---
 
-Test
+
+Test commit
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
